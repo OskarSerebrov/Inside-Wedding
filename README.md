@@ -1,3 +1,3 @@
 # Inside Wedding
 
-Video for wedding project.
+Тут просто лежит видео для сайта.
