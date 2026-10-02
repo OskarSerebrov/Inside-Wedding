@@ -1,0 +1,152 @@
+<!-- Вставьте весь этот код в блок T123 «HTML-код» -->
+<section class="inside-wedding-gallery" aria-label="Видео Inside Wedding">
+  <article class="inside-wedding-gallery__item">
+    <video
+      class="inside-wedding-gallery__video"
+      controls
+      playsinline
+      preload="none"
+      poster="https://cdn.jsdelivr.net/gh/OskarSerebrov/Inside-Wedding@v2.0-kinescope/posters/19968479726244.jpg"
+      aria-label="19968479726244"
+    >
+      <source src="https://cdn.jsdelivr.net/gh/OskarSerebrov/Inside-Wedding@v2.0-kinescope/videos/19968479726244.mp4" type="video/mp4">
+      Ваш браузер не поддерживает воспроизведение видео.
+    </video>
+    <p class="inside-wedding-gallery__title">19968479726244</p>
+  </article>
+
+  <article class="inside-wedding-gallery__item">
+    <video
+      class="inside-wedding-gallery__video"
+      controls
+      playsinline
+      preload="none"
+      poster="https://cdn.jsdelivr.net/gh/OskarSerebrov/Inside-Wedding@v2.0-kinescope/posters/Reels%201.jpg"
+      aria-label="Reels 1"
+    >
+      <source src="https://cdn.jsdelivr.net/gh/OskarSerebrov/Inside-Wedding@v2.0-kinescope/videos/Reels%201.mp4" type="video/mp4">
+      Ваш браузер не поддерживает воспроизведение видео.
+    </video>
+    <p class="inside-wedding-gallery__title">Reels 1</p>
+  </article>
+
+  <article class="inside-wedding-gallery__item">
+    <video
+      class="inside-wedding-gallery__video"
+      controls
+      playsinline
+      preload="none"
+      poster="https://cdn.jsdelivr.net/gh/OskarSerebrov/Inside-Wedding@v2.0-kinescope/posters/Reels%203.jpg"
+      aria-label="Reels 3"
+    >
+      <source src="https://cdn.jsdelivr.net/gh/OskarSerebrov/Inside-Wedding@v2.0-kinescope/videos/Reels%203.mp4" type="video/mp4">
+      Ваш браузер не поддерживает воспроизведение видео.
+    </video>
+    <p class="inside-wedding-gallery__title">Reels 3</p>
+  </article>
+
+  <article class="inside-wedding-gallery__item">
+    <video
+      class="inside-wedding-gallery__video"
+      controls
+      playsinline
+      preload="none"
+      poster="https://cdn.jsdelivr.net/gh/OskarSerebrov/Inside-Wedding@v2.0-kinescope/posters/Reels%204.jpg"
+      aria-label="Reels 4"
+    >
+      <source src="https://cdn.jsdelivr.net/gh/OskarSerebrov/Inside-Wedding@v2.0-kinescope/videos/Reels%204.mp4" type="video/mp4">
+      Ваш браузер не поддерживает воспроизведение видео.
+    </video>
+    <p class="inside-wedding-gallery__title">Reels 4</p>
+  </article>
+
+  <article class="inside-wedding-gallery__item">
+    <video
+      class="inside-wedding-gallery__video"
+      controls
+      playsinline
+      preload="none"
+      poster="https://cdn.jsdelivr.net/gh/OskarSerebrov/Inside-Wedding@v2.0-kinescope/posters/Reels%205.jpg"
+      aria-label="Reels 5"
+    >
+      <source src="https://cdn.jsdelivr.net/gh/OskarSerebrov/Inside-Wedding@v2.0-kinescope/videos/Reels%205.mp4" type="video/mp4">
+      Ваш браузер не поддерживает воспроизведение видео.
+    </video>
+    <p class="inside-wedding-gallery__title">Reels 5</p>
+  </article>
+
+  <article class="inside-wedding-gallery__item">
+    <video
+      class="inside-wedding-gallery__video"
+      controls
+      playsinline
+      preload="none"
+      poster="https://cdn.jsdelivr.net/gh/OskarSerebrov/Inside-Wedding@v2.0-kinescope/posters/Reels%206.jpg"
+      aria-label="Reels 6"
+    >
+      <source src="https://cdn.jsdelivr.net/gh/OskarSerebrov/Inside-Wedding@v2.0-kinescope/videos/Reels%206.mp4" type="video/mp4">
+      Ваш браузер не поддерживает воспроизведение видео.
+    </video>
+    <p class="inside-wedding-gallery__title">Reels 6</p>
+  </article>
+
+  <article class="inside-wedding-gallery__item">
+    <video
+      class="inside-wedding-gallery__video"
+      controls
+      playsinline
+      preload="none"
+      poster="https://cdn.jsdelivr.net/gh/OskarSerebrov/Inside-Wedding@v2.0-kinescope/posters/Reels%207.jpg"
+      aria-label="Reels 7"
+    >
+      <source src="https://cdn.jsdelivr.net/gh/OskarSerebrov/Inside-Wedding@v2.0-kinescope/videos/Reels%207.mp4" type="video/mp4">
+      Ваш браузер не поддерживает воспроизведение видео.
+    </video>
+    <p class="inside-wedding-gallery__title">Reels 7</p>
+  </article>
+</section>
+
+<style>
+  .inside-wedding-gallery {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 24px;
+    width: 100%;
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .inside-wedding-gallery__item {
+    min-width: 0;
+    margin: 0;
+  }
+
+  .inside-wedding-gallery__video {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 9 / 16;
+    object-fit: cover;
+    background: #000;
+  }
+
+  .inside-wedding-gallery__title {
+    margin: 10px 0 0;
+    color: #111;
+    font: 500 16px/1.35 Arial, sans-serif;
+  }
+
+  @media (max-width: 959px) {
+    .inside-wedding-gallery {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  @media (max-width: 479px) {
+    .inside-wedding-gallery {
+      grid-template-columns: minmax(0, 1fr);
+      gap: 32px;
+    }
+  }
+</style>
