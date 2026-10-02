@@ -1,0 +1,34 @@
+<!-- Вставьте весь этот код в блок T123 «HTML-код» -->
+<div class="inside-wedding-video-player">
+  <video
+    class="inside-wedding-video-player__media"
+    controls
+    playsinline
+    preload="metadata"
+    aria-label="Inside Wedding"
+  >
+    <source
+      src="https://cdn.jsdelivr.net/gh/OskarSerebrov/Inside-Wedding@v1.0-video/Inside-Wedding-1080p.mp4"
+      type="video/mp4"
+    >
+    <a href="https://cdn.jsdelivr.net/gh/OskarSerebrov/Inside-Wedding@v1.0-video/Inside-Wedding-1080p.mp4">
+      Открыть видео
+    </a>
+  </video>
+</div>
+
+<style>
+  .inside-wedding-video-player {
+    width: 100%;
+    overflow: hidden;
+    background: #000;
+  }
+
+  .inside-wedding-video-player__media {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1920 / 1004;
+    object-fit: contain;
+  }
+</style>

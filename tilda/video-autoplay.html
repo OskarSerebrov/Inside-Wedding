@@ -1,0 +1,58 @@
+<!-- Вставьте весь этот код в блок T123 «HTML-код» -->
+<div class="inside-wedding-video-autoplay">
+  <video
+    class="inside-wedding-video-autoplay__media"
+    autoplay
+    muted
+    loop
+    playsinline
+    preload="metadata"
+    aria-label="Inside Wedding"
+  >
+    <source
+      src="https://cdn.jsdelivr.net/gh/OskarSerebrov/Inside-Wedding@v1.0-video/Inside-Wedding-1080p.mp4"
+      type="video/mp4"
+    >
+    <a href="https://cdn.jsdelivr.net/gh/OskarSerebrov/Inside-Wedding@v1.0-video/Inside-Wedding-1080p.mp4">
+      Открыть видео
+    </a>
+  </video>
+</div>
+
+<style>
+  .inside-wedding-video-autoplay {
+    width: 100%;
+    overflow: hidden;
+    background: #000;
+  }
+
+  .inside-wedding-video-autoplay__media {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1920 / 1004;
+    object-fit: cover;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .inside-wedding-video-autoplay__media {
+      object-fit: contain;
+    }
+  }
+</style>
+
+<script>
+  (function () {
+    var videos = document.querySelectorAll('.inside-wedding-video-autoplay__media');
+    var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    videos.forEach(function (video) {
+      if (reduceMotion) {
+        video.autoplay = false;
+        video.loop = false;
+        video.pause();
+        video.controls = true;
+      }
+    });
+  }());
+</script>
