@@ -16,6 +16,19 @@
 
 Все ролики в одной адаптивной галерее: [`tilda/kinescope-gallery.html`](tilda/kinescope-gallery.html).
 
+## Вайб-блок команды
+
+Сжатые беззвучные MP4-превью для бесконечной ленты фото и видео:
+
+| Рилс | Файл | CDN для Tilda |
+|---|---|---|
+| Лина и Павел | [`reel-lina-pavel.mp4`](videos/vibe-gallery/reel-lina-pavel.mp4) | `https://cdn.jsdelivr.net/gh/OskarSerebrov/Inside-Wedding@v2.3-vibe-gallery/videos/vibe-gallery/reel-lina-pavel.mp4` |
+| Никита и Есения | [`reel-nikita-eseniya.mp4`](videos/vibe-gallery/reel-nikita-eseniya.mp4) | `https://cdn.jsdelivr.net/gh/OskarSerebrov/Inside-Wedding@v2.3-vibe-gallery/videos/vibe-gallery/reel-nikita-eseniya.mp4` |
+| Сергей и Анастасия | [`reel-sergey-anastasia.mp4`](videos/vibe-gallery/reel-sergey-anastasia.mp4) | `https://cdn.jsdelivr.net/gh/OskarSerebrov/Inside-Wedding@v2.3-vibe-gallery/videos/vibe-gallery/reel-sergey-anastasia.mp4` |
+| Ульяна и Альмир | [`reel-ulyana-almir.mp4`](videos/vibe-gallery/reel-ulyana-almir.mp4) | `https://cdn.jsdelivr.net/gh/OskarSerebrov/Inside-Wedding@v2.3-vibe-gallery/videos/vibe-gallery/reel-ulyana-almir.mp4` |
+
+Файлы перекодированы в H.264, 720 px по высоте, без звука и с `faststart` для быстрого начала воспроизведения в браузере.
+
 ## Как вставить в Tilda
 
 1. Откройте нужную страницу.
